@@ -1,0 +1,121 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+	 background-color: #21786c;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+
+h2 {
+    color: black;
+}
+.container {
+	display: flex;
+    justify-content:center;
+    gap: 5px; /* Ajusta el espacio entre los divs "left" y "right" */
+    padding: 10px;
+}
+
+.left, .right {
+	font-family:'supernatural knigt';
+  
+    border: 5px solid rgba(17, 176, 163, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.left {
+    text-align: left;
+	width: 250px; /* Ajusta según sea necesario */
+}
+
+.right {
+    text-align: left;
+	width: 500px; /* Ajusta según sea necesario */
+}
+.start {
+	position: relative;
+	border: 5px solid rgba(17, 176, 163, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center; /* Centra el contenido dentro de .photo */
+	display: inline-block; /* Para centrar horizontalmente */
+	width: 100Px; /* Asegura que las imágenes no se extiendan más allá de su contenedor */
+    height: 100px;
+
+}
+.start img{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	max-width: 80px; /* Asegura que las imágenes no se extiendan más allá de su contenedor */
+    height: 80px;
+    transition: transform 0.10s ease; /* Agrega una transición suave */
+}
+.start img:hover {
+   transform: translate(-50%, -50%) scale(1.1); /* Agranda la imagen al 110% */
+}
+
+/* Estilos generales para la trivia */
+
+.hidden {
+    display: none;
+	
+}
+
+.question {
+    position: relative;
+	border: 5px solid rgba(17, 176, 163, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center; /* Centra el contenido dentro de .photo */
+	display: inline-block; /* Para centrar horizontalmente */
+	width: 300Px; /* Asegura que las imágenes no se extiendan más allá de su contenedor */
+    height: 100%;
+	background-color: #3f888f;
+}
+
+.answers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre las respuestas */
+    margin-top: 10px;
+	
+	
+	
+}
+
+.answer {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3f888f; /* Color de fondo predeterminado */
+    border: 2px solid rgba(68, 179, 190, 0.1);
+    width: calc(25% - 10px); /* Ajusta el ancho según el número de respuestas en una fila */
+    text-align: center; /* Centra el texto */
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+
+}
+
+#score-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+	background-color: #3f888f;
+	border: 2px solid rgba(68, 179, 190, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+.result-categories div {
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.highlight {
+    background-color: lightgreen; /* Puedes cambiar el color de fondo resaltado aquí */
+    font-weight: bold;
+}
