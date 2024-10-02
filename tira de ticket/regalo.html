@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ticket</title>
+    <!-- <link rel="icon" href="cora.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="harry.css">
+</head>
+<body>
+<div class="mayor">
+    <h2>Un regalo, abranlo </h2>
+</div>  
+
+<div class="photo">
+	<p> Sin miedo  </p>
+    <img id="regalo" src="regalo.png">
+	<a href="alo.html"><img id="alo" src="alo.png"></a>
+	<a href="alo.html"><img id="reg" src="reg.png"></a>
+	<!--  
+	<img id="alo" src="alo.png">
+	<img id="reg" src="reg.png"> -->
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const regaloImage = document.getElementById('regalo');
+        const aloImage = document.getElementById('alo');
+        const regImage = document.getElementById('reg');
+        
+        // Agregar un evento de clic a la imagen "regalo"
+        regaloImage.addEventListener('click', function() {
+            regaloImage.style.display = 'none'; // Oculta la imagen "regalo"
+            aloImage.style.display = 'block';  // Muestra la imagen "alo"
+            regImage.style.display = 'block';  // Muestra la imagen "reg"
+        });
+		
+    });
+</script>
+
+</body>
+</html>

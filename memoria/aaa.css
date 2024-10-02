@@ -1,0 +1,86 @@
+ /* Estilos para el gameBoard */
+    #gameBoard {
+	  border: 2px solid rgba(204, 169, 221, 0.5);
+	  box-shadow: 0px 0px 20px 10px rgba(204, 169, 221, 1.5); 
+      overflow: hidden;
+      width: 450px; /* (100px de ancho + 5px de margen) * 4 + 20px de margen adicional */
+      margin: 0 auto;
+      background-color: #fff; /* Color de fondo del gameBoard */
+    }
+    #gameBoardd {
+	  border: 2px solid rgba(204, 169, 221, 0.5);
+	  box-shadow: 0px 0px 20px 10px rgba(204, 169, 221, 1.5); 
+      overflow: hidden;
+      width: 700px; /* (100px de ancho + 5px de margen) * 4 + 20px de margen adicional */
+      margin: 0 auto;
+      background-color: #fff; /* Color de fondo del gameBoard */
+    }
+
+    /* Estilos para el fondo del body */
+    body {
+    background-color: #c63637; /* Color de fondo del body */
+	margin: 0; /* Eliminar márgenes predeterminados */
+	padding: 0; /* Eliminar relleno predeterminado */
+	font-family: 'Comic Sans MS', cursive;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    }
+	
+.container {
+	display: flex;
+    justify-content:center;
+    gap: 5px; /* Ajusta el espacio entre los divs "left" y "right" */
+    padding: 10px;
+}
+
+.left, .right {
+	font-family:'supernatural knigt';
+	background-color: #c83c3d;
+    border: 5px solid rgba(239, 14, 15, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.left {
+    text-align: left;
+	width: 400px; /* Ajusta según sea necesario */
+}
+
+.right {
+    text-align: center;
+	width: 900px; /* Ajusta según sea necesario */
+
+}
+
+.dificultad{
+	display: inline-block; /* Para centrar horizontalmente */
+	max-width: 100px; /* Asegura que las imágenes no se extiendan más allá de su contenedor */
+    height: 100px; /* Ajusta la altura automáticamente para mantener la proporción */
+    transition: transform 0.3s ease-in-out;
+	padding: 10px;
+}
+.dificultad img{
+	display: inline-block; /* Para centrar horizontalmente */
+	max-width: 100%; /* Asegura que las imágenes no se extiendan más allá de su contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    max-height: 100px; /* Establece una altura máxima para las imágenes */
+    transition: transform 0.3s ease-in-out;
+	
+	
+}
+.dificultad:hover img {
+    transform: scale(1.1);
+}
+
+.cardd {
+      width: 100px;
+      height: 100px;
+      background-color: #eee;
+      border: 1px solid #ccc;
+      margin: 5px;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+}

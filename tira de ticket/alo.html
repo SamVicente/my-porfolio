@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket</title>
+    <!-- <link rel="icon" href="cora.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="harry.css">
+</head>
+<body>
+<div class="mayor">
+    <h2>Hagan click para consumir los ticket </h2>
+	<a href="stella.html"><img src="stella.png"class="stella-img"></a>
+</div> 
+<div class="photos">    
+    <img src="ticket.png" class="ticket">
+    <img src="ticket.png" class="ticket">
+    <img src="ticket.png" class="ticket">
+    <img src="ticket.png" class="ticket">
+    <img src="ticket.png" class="ticket">
+    <img src="ticket.png" class="ticket">
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    const tickets = document.querySelectorAll('.ticket');
+    
+    tickets.forEach(ticket => {
+        ticket.addEventListener('click', () => {
+            if (!ticket.classList.contains('used')) {
+                ticket.classList.add('used');
+                // Aquí puedes añadir más lógica, como deshabilitar el clic o actualizar el estado
+            }
+        });
+    });
+});
+
+
+
+</script>
+</body>
+</html>

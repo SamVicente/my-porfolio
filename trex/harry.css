@@ -1,0 +1,36 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+	
+}
+
+
+canvas {
+    border: 2px solid #000;
+    background-color: #fff;
+}
+#gameContainer {
+    position: relative;
+}
+
+#scoreContainer {
+    position: absolute;
+    top: -20px;
+   left: 13px; /* Justo fuera del borde derecho del canvas */
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+#liveContainer {
+    position: absolute;
+    top: -20px;
+   left: 120px; /* Justo fuera del borde derecho del canvas */
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: black;
+}

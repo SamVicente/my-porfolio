@@ -1,0 +1,71 @@
+ /* Estilos para el gameBoard */
+
+#gameBoardd {
+	border: 2px solid rgba(239, 14, 15, 0.5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);     
+	overflow: hidden;
+    width: 500px; /* (100px de ancho + 5px de margen) * 4 + 20px de margen adicional */
+    margin: 0 auto;
+    background-color: #ffdedb; /* Color de fondo del gameBoard */
+}
+
+    /* Estilos para el fondo del body */
+body {
+    background-color: #c63637; /* Color de fondo del body */
+	margin: 0; /* Eliminar márgenes predeterminados */
+	padding: 0; /* Eliminar relleno predeterminado */
+	font-family: 'Comic Sans MS', cursive;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+	
+.card {
+      width: 70px;
+      height: 70px;
+      background-color: #eee;
+      border: 1px solid #ccc;
+      margin: 5px;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+}
+
+.bot {
+    position: right; /* Establece el posicionamiento relativo para los elementos hijos absolutos */
+    width: 20px; /* Ancho del contenedor */
+    height: 20px; /* Altura del contenedor */
+    text-align: left; /* Alinea el botón "bot" a la izquierda */
+	
+}
+
+.bot img {
+    position: left; /* Establece el posicionamiento absoluto para la imagen */
+    top: 0; /* Coloca la imagen en la parte superior */
+    transform: translate(-700%, -50%); /* Centra la imagen ajustando su posición */
+    max-width: 30px; /* Asegura que las imágenes no se extiendan más allá de su contenedor */
+    height: 30px; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+
+ #pauseButton img {
+	position: right; /* Establece el posicionamiento absoluto para la imagen */
+    top: 0; /* Coloca la imagen en la parte superior */
+    right: 0; /* Coloca la imagen en el extremo derecho */
+    transform: translate(50%, -10%); /* Centra la imagen ajustando su posición */
+    max-width: 100%; /* Asegura que las imágenes no se extiendan más allá de su contenedor */
+    height: 30px; /* Ajusta la altura automáticamente para mantener la proporción */
+	text-align: right; /* Alinea el botón de pausa a la derecha */
+ }
+.bot, #timer, #pauseButton {
+  flex: 1; /* Permite que cada elemento use la misma cantidad de espacio disponible */
+  text-align: center; /* Alinea el contenido dentro de cada div */
+  
+}
+.conteiner {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos: uno a la izquierda, otro en el centro, otro a la derecha */
+  align-items: center; /* Centra los elementos verticalmente dentro del contenedor */
+
+}

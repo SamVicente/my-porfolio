@@ -1,0 +1,277 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background-color: #108d83;
+    color: black;
+    text-align: center;
+}
+
+/* Contenedor del ramo */
+.bouquet {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto; /* Centra el ramo en la página */
+}
+
+/* Flor principal */
+.flower {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.flower-center {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border: 1px solid black;
+}
+
+.petal {
+  width: 30px;
+  height: 90px;
+  background-color: yellow;
+  border-radius: 100% ;
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  transform-origin: 50% 0%;
+  z-index: 0;
+  border: 1px solid black;
+   
+}
+
+.petal:nth-child(2)  { transform: rotate(0deg); z-index: -1; }  /* Adelante */
+.petal:nth-child(3)  { transform: rotate(30deg); z-index: 0; } /* Atrás */
+.petal:nth-child(4)  { transform: rotate(60deg); z-index: 1; }  /* Adelante */
+.petal:nth-child(5)  { transform: rotate(90deg); z-index: 0; } /* Atrás */
+.petal:nth-child(6)  { transform: rotate(120deg); z-index: -1; } /* Adelante */
+.petal:nth-child(7)  { transform: rotate(150deg); z-index: 0; } /* Atrás */
+.petal:nth-child(8)  { transform: rotate(180deg); z-index: 1; } /* Adelante */
+.petal:nth-child(9)  { transform: rotate(210deg); z-index: 0; } /* Atrás */
+.petal:nth-child(10) { transform: rotate(240deg); z-index: -1; } /* Adelante */
+.petal:nth-child(11) { transform: rotate(270deg); z-index: 0; } /* Atrás */
+.petal:nth-child(12) { transform: rotate(300deg); z-index: 1; } /* Adelante */
+.petal:nth-child(13) { transform: rotate(330deg); z-index: 0; } /* Atrás */
+
+/* Nuevos pétalos duplicados */
+.petal:nth-child(14) { transform: rotate(15deg); z-index: 0; } /* Adelante */
+.petal:nth-child(15) { transform: rotate(45deg); z-index: -1; } /* Atrás */
+.petal:nth-child(16) { transform: rotate(75deg); z-index: 0; } /* Adelante */
+.petal:nth-child(17) { transform: rotate(105deg); z-index: 1; } /* Atrás */
+.petal:nth-child(18) { transform: rotate(135deg); z-index: 0; } /* Adelante */
+.petal:nth-child(19) { transform: rotate(165deg); z-index: -1; } /* Atrás */
+.petal:nth-child(20) { transform: rotate(195deg); z-index: 0; } /* Adelante */
+.petal:nth-child(21) { transform: rotate(225deg); z-index: 1; } /* Atrás */
+.petal:nth-child(22) { transform: rotate(255deg); z-index: 0; } /* Adelante */
+.petal:nth-child(23) { transform: rotate(285deg); z-index: -1; } /* Atrás */
+.petal:nth-child(24) { transform: rotate(315deg); z-index: 0; } /* Adelante */
+.petal:nth-child(25) { transform: rotate(345deg); z-index: 1; } /* Atrás */
+.petal:nth-child(26) { transform: rotate(315deg); z-index: 0; } /* Adelante */
+.petal:nth-child(27) { transform: rotate(345deg); z-index: 1; } /* Atrás */
+
+.stem {
+  width: 20px;
+  height: 200px;
+  background-color: green;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -2;
+  border: 1px solid black;
+}
+
+.leaf {
+  width: 60px;
+  height: 30px;
+  background-color: green;
+  border-radius: 100% / 100%; /* Hace que las hojas sean ovaladas */
+  position: absolute;
+  top: 100%;
+  z-index: -3;
+  border: 1px solid black;
+}
+
+/* Hoja izquierda */
+.leaf-left {
+  left: 45%; /* Mantén la posición ajustada */
+  transform: translateX(-80%) rotate(45deg); /* Ajusta a la izquierda */
+  top: 100%; /* Mantén la misma posición vertical para la hoja izquierda */
+}
+
+/* Hoja derecha */
+.leaf-right {
+  left: 44%; /* Mantén la posición ajustada */
+  transform: translateX(20%) rotate(-45deg); /* Ajusta a la derecha */
+  top: 110%; /* Baja un poco la hoja derecha */
+}
+
+/* Posicionamiento específico de cada flor */
+.flower1 {
+  top: 40px;
+  left: 130px;
+  transform: scale(1) rotate(-10deg);
+  z-index: 1; /* Flor 1 detrás */
+}
+
+.flower2 {
+  top: 120px;
+  left: 200px;
+  z-index: 3; /* Flor 2 al frente */
+}
+
+.flower3 {
+  top: 50px;
+  left: 250px;
+  transform: scale(1) rotate(15deg);
+  z-index: 2; /* Flor 3 también detrás, pero sobre la flor 1 */
+}
+
+.flower4 {
+  top: 130px;
+  left: 320px;
+  transform: scale(0.9) rotate(25deg);
+  z-index: 2; /* Flor 4 también detrás, pero sobre la flor 1 */
+  
+}
+
+.flower5 {
+  top: 150px;
+  left: 80px;
+  transform: scale(0.9) rotate(-25deg);
+  z-index: 2; /* Flor 5 también detrás, pero sobre la flor 1 */
+}
+
+/* Papel envolvente detrás */
+.paper {
+  position: absolute;
+  bottom: 0;
+  left: 160px;
+  width: 270px; /* Ajusta según el tamaño del ramo */
+  height: 160px;
+  background-color: #f4e1d2; /* Color de papel marrón claro o beige */
+  transform: rotate(180deg); /* Centra y rota el papel */
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Le da forma triangular */
+  z-index: -1; /* Detrás de las flores */
+  border: 1px solid #c2a483; /* Borde para dar la apariencia de papel */
+}
+
+/* Papel envolvente adicional en frente */
+.front-paper {
+  position: absolute;
+  bottom: 34px;
+  background-color: #f4e1d2;
+  z-index: 4; /* Mayor que el z-index de las flores */
+  border: 1px solid #f4e1d2; /* Borde para dar la apariencia de papel */
+  width: 250px; /* Ajusta según sea necesario */
+  height: 250px; /* Ajusta según sea necesario */
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* Triángulo izquierdo superior */
+.left-paper {
+  left: 77%; /* Ajusta según sea necesario */
+  width: 24%;
+  height: 40%;
+  transform: translateX(-100%) rotate(45deg);
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+/* Triángulo derecho superior */
+.right-paper {
+  right: 58%; /* Ajusta según sea necesario */
+  width: 24%;
+  height: 40%;
+  transform: translateX(100%) rotate(-45deg);
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+/* Estilo para la cinta */
+.ribbon {
+  position: absolute;
+  bottom: 70px; /* Ajusta según sea necesario */
+  left: 59%;
+  transform: translateX(-50%);
+  width: 130px; /* Ancho de la cinta */
+  height: 20px; /* Altura de la cinta */
+  background-color: pink; /* Color de la cinta */
+  border-radius: 10px; /* Bordes redondeados para la cinta */
+  z-index: 5; /* Asegúrate de que la cinta esté encima de todo */
+ 
+}
+
+/* Decoración para simular el nudo de la cinta */
+.ribbon::before,
+.ribbon::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: pink;
+  border-radius: 50%;
+  top: -5px;
+  
+}
+
+.ribbon::before {
+  left: 40px;
+}
+
+.ribbon::after {
+  right: 40px;
+}
+@keyframes bounceAndSwing {
+  0% { transform: translateY(0) rotate(0); }
+  25% { transform: translateY(-10px) rotate(-3deg); }
+  50% { transform: translateY(0) rotate(3deg); }
+  75% { transform: translateY(-5px) rotate(-2deg); }
+  100% { transform: translateY(0) rotate(0); }
+}
+
+
+/* Aplica la clase bouncing a todas las flores */
+.flower-head {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  animation: bounceAndSwing  1.5s infinite; /* Añadido aquí para que la animación sea constante */
+
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(50px); opacity: 0; } /* Comienza 50px más abajo */
+  100% { transform: translateY(0); opacity: 1; } /* Termina en su posición original */
+}
+
+.bouquet {
+  animation: slideIn 1s ease-in; /* Aplica la animación a todo el ramo */
+}
+
+@keyframes sway {
+ 0% { transform: translateX(-80%) translateY(-60%) rotate(45deg) ; }
+  25% { transform: translateX(-80%) translateY(-70%) rotate(50deg); } /* Rotación leve a la derecha */
+  50% { transform: translateX(-80%) translateY(-60%) rotate(45deg); } /* Regresa a la posición original */
+  75% { transform: translateX(-80%) translateY(-50%) rotate(40deg); } /* Rotación leve a la izquierda */
+  100% { transform: translateX(-80%) translateY(-60%) rotate(45deg); } /* Regresa a la posición original */
+}
+
+/* Aplica la animación a las hojas */
+.leaf-left {
+  animation: sway 1s infinite; /* Aplica la animación de balanceo */
+}
+@keyframes swayy {
+ 0% { transform: translateX(20%) translateY(20%) rotate(-45deg); }
+  25% { transform: translateX(20%) translateY(10%) rotate(-50deg); } /* Rotación leve a la derecha */
+  50% { transform: translateX(20%) translateY(20%) rotate(-45deg); } /* Regresa a la posición original */
+  75% { transform: translateX(20%) translateY(30%) rotate(-40deg); } /* Rotación leve a la izquierda */
+  100% { transform: translateX(20%) translateY(20%) rotate(-45deg); } /* Regresa a la posición original */
+}
+.leaf-right {
+  animation: swayy 1s infinite; /* Aplica la animación de balanceo */
+}
